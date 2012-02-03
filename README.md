@@ -6,7 +6,7 @@ Just my Vim config.
 
 Clone the repo:
 
-    git clone git://github.com/nelstrom/dotvim.git ~/.vim
+    git clone git://github.com/modocache/dotvim.git ~/.vim
 		
 Create symlinks:
 
