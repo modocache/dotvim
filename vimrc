@@ -10,7 +10,8 @@ call pathogen#helptags()
 set nocompatible
 
 " Specify colorscheme.
-" colorscheme wombat
+set t_Co=256
+colorscheme molokai
 
 set title
 set ruler                       " shows coordinates of cursor in bottom-right
@@ -38,25 +39,31 @@ let g:miniBufExplMapCTabSwitchBufs = 1
 let g:miniBufExplModSelTarget = 1 
 
 filetype on
+filetype plugin on
 syntax on
 set backspace+=indent,eol,start " Backspace can delete ANYTHING
 set autoindent
 set smartindent
 " Set tabstop, softtabstop, shiftwidth, and expandtab (soft tabs)
 set ts=4 sts=4 sw=4 expandtab
-"set showmatch           " cursor will jump to matching bracket on close/open brace
 
-set vb t_vb=            " prevents beeps on invalid commands                 
-set incsearch           " performs search as text is entered
+set vb t_vb=                " prevents beeps on invalid commands
+set incsearch               " performs search as text is entered
 set ignorecase
-set smartcase           " ignore case unless caps specified in search terms
-set list                                         " Show invisibles
+set smartcase               " ignore case unless caps specified in search terms
+set list                    " Show invisibles
 set listchars=tab:▸\ ,eol:¬ " Use same chars for invisibles as TextMate
 
-"set virtualedit=all    " allows cursor to free-roam
-set wrap!                       " turn off word-wrap
+" set virtualedit=all         " allows cursor to free-roam
+set wrap!                   " turn off word-wrap
 
 " load server specific settings
 if filereadable($HOME . '/.vimrc.local')
-         source $HOME/.vimrc.local
+    source $HOME/.vimrc.local
+endif
+
+if !exists("autocommands_loaded")
+    let autocommands_loaded = 1
+    autocmd BufRead,BufNewFile,FileReadPost *.py source ~/.vim/languages/pythonrc
+    autocmd BufRead,BufNewFile,FileReadPost *.rb source ~/.vim/languages/rubyrc
 endif

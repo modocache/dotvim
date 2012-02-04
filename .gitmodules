@@ -25,3 +25,42 @@
 [submodule "bundle/Command-T"]
 	path = bundle/Command-T
 	url = https://github.com/wincent/Command-T.git
+[submodule "bundle/pyflakes-pathogen"]
+	path = bundle/pyflakes-pathogen
+	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "bundle/ack.vim"]
+	path = bundle/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/gundo.vim"]
+	path = bundle/gundo.vim
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/pydoc.vim"]
+	path = bundle/pydoc.vim
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "bundle/pytest.vim"]
+	path = bundle/pytest.vim
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "bundle/vim-makegreen"]
+	path = bundle/vim-makegreen
+	url = https://github.com/reinh/vim-makegreen.git
+[submodule "bundle/TaskList.vim"]
+	path = bundle/TaskList.vim
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/rope-vim"]
+	path = bundle/rope-vim
+	url = https://github.com/klen/rope-vim
+[submodule "bundle/vim-wombat"]
+	path = bundle/vim-wombat
+	url = https://github.com/cschlueter/vim-wombat.git
+[submodule "bundle/molokai"]
+	path = bundle/molokai
+	url = https://github.com/vim-scripts/molokai.git
+[submodule "bundle/Solarized"]
+	path = bundle/Solarized
+	url = https://github.com/vim-scripts/Solarized.git
+[submodule "bundle/Conque-Shell"]
+	path = bundle/Conque-Shell
+	url = https://github.com/vim-scripts/Conque-Shell.git
