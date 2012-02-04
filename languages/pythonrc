@@ -21,14 +21,9 @@ autocmd filetype python source ~/.vim/bundle/pydoc.vim/ftplugin/python_pydoc.vim
 " Wrap at 72 chars for comments.
 set formatoptions=cq textwidth=72 foldignore= wildignore+=*.py[co]
 
-" Highlight end of line whitespace.
-highlight WhitespaceEOL ctermbg=red guibg=red
-match WhitespaceEOL /\s\+$/
+" Show color column to indicate 78 width.
+:set colorcolumn=78
 
-" The next two highlight matches break the previous one, I don't know why.
-" Show long lines.
-highlight LongLine guibg=red ctermbg=red
-match LongLine /\%>79v.\+/
 " Highlight bzr merge markers.
 highlight MergeMarker guibg=red ctermbg=red
 match MergeMarker /^[<=>\|]\{7\}\( [A-Z]\+\)?$/
