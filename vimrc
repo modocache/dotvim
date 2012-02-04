@@ -27,10 +27,11 @@ map <F4> :TlistToggle<cr>
 map <F3> :NERDTreeToggle<cr>
 set tags=tags
 
-" NERDTree Settings
-autocmd vimenter * NERDTree                     " Open NERDTree on vimenter
-let NERDTreeShowHidden=1                        " Show hidden files
-let NERDTreeIgnore=['\.py[co]$', '\.DS_Store']  " Ignore compiled python files.
+" NERDTree Settings -------------------------------------
+autocmd vimenter * NERDTree " Open NERDTree on vimenter
+let NERDTreeShowHidden=1    " Show hidden files
+let NERDTreeIgnore=['\.py[co]$', '\.DS_Store', '\.swp$']
+" -------------------------------------------------------
 
 " MiniBufExplorer Settings
 let g:miniBufExplMapWindowNavVim = 1 
