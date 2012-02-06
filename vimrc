@@ -11,7 +11,9 @@ set nocompatible
 
 " Specify colorscheme.
 set t_Co=256
+set background=dark
 colorscheme molokai
+let s:molokai_original=1
 
 set title
 set ruler                       " shows coordinates of cursor in bottom-right
