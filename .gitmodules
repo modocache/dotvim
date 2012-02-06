@@ -61,3 +61,6 @@
 [submodule "bundle/AfterColors.vim"]
 	path = bundle/AfterColors.vim
 	url = https://github.com/vim-scripts/AfterColors.vim
+[submodule "bundle/vim-rvm"]
+	path = bundle/vim-rvm
+	url = https://github.com/tpope/vim-rvm.git

@@ -35,6 +35,12 @@ let NERDTreeShowHidden=1    " Show hidden files
 let NERDTreeIgnore=['\.py[co]$', '\.DS_Store', '\.swp$']
 " -------------------------------------------------------
 
+" rvm.vim Settings ---------------
+" Use default RVM on start
+autocmd vimenter * Rvm use default
+" --------------------------------
+
+
 " MiniBufExplorer Settings
 let g:miniBufExplMapWindowNavVim = 1 
 let g:miniBufExplminiBufMapWindowNavArrows = 1 
