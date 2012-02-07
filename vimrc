@@ -14,6 +14,7 @@ set t_Co=256
 set background=dark
 colorscheme molokai
 let s:molokai_original=1
+set cursorline
 
 set title
 set ruler                       " shows coordinates of cursor in bottom-right
@@ -39,7 +40,6 @@ let NERDTreeIgnore=['\.py[co]$', '\.DS_Store', '\.swp$']
 " Use default RVM on start
 autocmd vimenter * Rvm use default
 " --------------------------------
-
 
 " MiniBufExplorer Settings
 let g:miniBufExplMapWindowNavVim = 1 
